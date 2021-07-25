@@ -1,1 +1,18 @@
-
+name: GitHub Actions Demo
+on:
+  workflow_dispatch:
+jobs: 
+  job1: 
+    runs-on: ubuntu-latest
+    name: runner
+    steps:
+      - name: runVM
+        run: |
+          (echo "zhiying123";sleep 1s;echo "zhiying123") | sudo passwd root
+          mkdir ngrok1
+          cd ngrok1
+          wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+          unzip ngrok-stable-linux-amd64.zip
+          ./ngrok authtoken 1upbBOlPymWdSDpvqR4PQ6AdOyw_5JuXZBwU8GGoE9N7RLRso
+          ./ngrok tcp 22
+          sleep 6h
