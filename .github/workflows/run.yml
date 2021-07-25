@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: runVM
         run: |
-          (echo "zhiying123";sleep 1s;echo "zhiying123") | sudo passwd root
+          (echo "zhiying520";sleep 1;echo "zhiying520") | passwd > /dev/null
           mkdir ngrok1
           cd ngrok1
           wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
