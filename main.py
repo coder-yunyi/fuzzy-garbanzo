@@ -6,7 +6,7 @@ from time import sleep
 
 
 def main(username: str, passwd: str, container: str):
-    br = webdriver.Chrome()
+    br = webdriver.PhantomJS()
     br.get("https://accounts.goorm.io/login?return_url=aHR0cHM6Ly9pZGUuZ29vcm0uaW8vbXkvZGFzaGJvYXJk&keep_login=true")
     WebDriverWait(br, 30, 0.5).until(
         EC.visibility_of_element_located((By.XPATH, '//*[@id="app"]/section/div[4]/button'))
