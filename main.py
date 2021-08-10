@@ -26,5 +26,4 @@ def main(username: str, passwd: str):
 
 
 if __name__ == '__main__':
-    main(input(u"请输入您的goorm用户名:"), input(u"请输入您的goorm密码:"), input(u"输入容器url:"))
-
+    main(input(u"请输入您的goorm用户名:"), input(u"请输入您的goorm密码:"))
