@@ -21,11 +21,7 @@ def main():
         'https://down.fruitpan.com/fs/ecod7era8f42f1544fsg7dfh8bb/'
     ]
     br.get(urls[randint(0, 3)])
-    WebDriverWait(
-        br, 20, 0.2
-    ).until(EC.element_to_be_clickable(
-        (By.XPATH, '/html/body/div[7]/div[2]/div[1]/div[1]/div[2]/div/div[1]/button'))
-    )
+    br.implicitly_wait(40)
     br.find_element_by_xpath(
         '/html/body/div[7]/div[2]/div[1]/div[1]/div[2]/div/div[1]/button'
     ).click()
