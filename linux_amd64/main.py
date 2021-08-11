@@ -7,13 +7,6 @@ from random import randint
 from time import sleep
 
 
-def in_url(device, url):
-    if url in device.current_url():
-        return True
-    else:
-        return False
-
-
 def main():
     urls = [
         'https://down.fruitpan.com/fs/0c7o6dce5reaef342154fsgdfh3/',
@@ -26,13 +19,11 @@ def main():
     br.find_element_by_xpath(
         '//*[@id="speed-type-1"]/div/div[1]/button'
     ).click()
-    sleep(30)
-    WebDriverWait(br, 20, 0.2).until(in_url(br, 'https://down.fruitpan.com/file/'))
-    sleep(2)
+    sleep(35)
     br.find_element_by_xpath(
         '//*[@id="downbtn"]'
     ).click()
-    sleep(5)
+    sleep(8)
     return()
 
 
