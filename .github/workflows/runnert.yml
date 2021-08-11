@@ -16,11 +16,11 @@ jobs:
       - name: runt
         run: |
           sudo pip3 install selenium==2.48.0
-          sudo cd /home
+          cd /home
           sudo mkdir refresh
-          sudo cd refresh
+          cd refresh
           sudo wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2
           sudo tar -axf phantomjs-2.1.1-linux-x86_64.tar.bz2
-          sudo export PATH=$PATH:/home/refresh/phantomjs-2.1.1-linux-x86_64/bin
+          export PATH=$PATH:/home/refresh/phantomjs-2.1.1-linux-x86_64/bin
           sudo wget https://cdn.jsdelivr.net/gh/fuzzy-garbanzo@main/linux_amd64/main.py
           sudo python3 main.py
