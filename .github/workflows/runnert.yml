@@ -1,5 +1,6 @@
 name: GitHub Actions Demot
 on:
+  workflow_dispatch:
   schedule:
     - cron: '* * * * *'
 jobs: 
