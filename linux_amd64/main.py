@@ -27,7 +27,6 @@ def main():
     ).click()
     sleep(30)
     WebDriverWait(br, 20, 0.2).until(in_url(br, 'https://down.fruitpan.com/file/'))
-    sleep(2)
     br.find_element_by_xpath(
         '/html/body/div[7]/div[2]/div[1]/div[2]/div[1]/button[1]'
     ).click()
