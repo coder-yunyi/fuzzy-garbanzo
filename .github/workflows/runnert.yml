@@ -4,24 +4,643 @@ on:
   schedule:
     - cron: '* * * * *'
 jobs: 
-  job1: 
-    runs-on: ubuntu-latest
-    strategy:
-        fail-fast: true
-        max-parallel: 20
-        matrix:
-          node: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
-    name: runnert
-    steps:
-      - name: runt
-        run: |
-          sudo pip3 install selenium
-          cd /home
-          sudo mkdir refresh
-          cd refresh
-          sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-          sudo dpkg -i google-chrome-stable_current_amd64.deb
-          sudo git clone https://github.com/coder-yunyi/fuzzy-garbanzo.git
-          export PATH=$PATH:/home/refresh/fuzzy-garbanzo/linux_amd64
-          cd ./fuzzy-garbanzo/linux_amd64
-          sudo python3 main.py
+
+            job1: 
+              runs-on: ubuntu-latest
+              name: runnert1
+              steps:
+                - name: runt1
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job2: 
+              runs-on: ubuntu-latest
+              name: runnert2
+              steps:
+                - name: runt2
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job3: 
+              runs-on: ubuntu-latest
+              name: runnert3
+              steps:
+                - name: runt3
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job4: 
+              runs-on: ubuntu-latest
+              name: runnert4
+              steps:
+                - name: runt4
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job5: 
+              runs-on: ubuntu-latest
+              name: runnert5
+              steps:
+                - name: runt5
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job6: 
+              runs-on: ubuntu-latest
+              name: runnert6
+              steps:
+                - name: runt6
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job7: 
+              runs-on: ubuntu-latest
+              name: runnert7
+              steps:
+                - name: runt7
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job8: 
+              runs-on: ubuntu-latest
+              name: runnert8
+              steps:
+                - name: runt8
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job9: 
+              runs-on: ubuntu-latest
+              name: runnert9
+              steps:
+                - name: runt9
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job10: 
+              runs-on: ubuntu-latest
+              name: runnert10
+              steps:
+                - name: runt10
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job11: 
+              runs-on: ubuntu-latest
+              name: runnert11
+              steps:
+                - name: runt11
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job12: 
+              runs-on: ubuntu-latest
+              name: runnert12
+              steps:
+                - name: runt12
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job13: 
+              runs-on: ubuntu-latest
+              name: runnert13
+              steps:
+                - name: runt13
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job14: 
+              runs-on: ubuntu-latest
+              name: runnert14
+              steps:
+                - name: runt14
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job15: 
+              runs-on: ubuntu-latest
+              name: runnert15
+              steps:
+                - name: runt15
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job16: 
+              runs-on: ubuntu-latest
+              name: runnert16
+              steps:
+                - name: runt16
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job17: 
+              runs-on: ubuntu-latest
+              name: runnert17
+              steps:
+                - name: runt17
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job18: 
+              runs-on: ubuntu-latest
+              name: runnert18
+              steps:
+                - name: runt18
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job19: 
+              runs-on: ubuntu-latest
+              name: runnert19
+              steps:
+                - name: runt19
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job20: 
+              runs-on: ubuntu-latest
+              name: runnert20
+              steps:
+                - name: runt20
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job21: 
+              runs-on: ubuntu-latest
+              name: runnert21
+              steps:
+                - name: runt21
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job22: 
+              runs-on: ubuntu-latest
+              name: runnert22
+              steps:
+                - name: runt22
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job23: 
+              runs-on: ubuntu-latest
+              name: runnert23
+              steps:
+                - name: runt23
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job24: 
+              runs-on: ubuntu-latest
+              name: runnert24
+              steps:
+                - name: runt24
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job25: 
+              runs-on: ubuntu-latest
+              name: runnert25
+              steps:
+                - name: runt25
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job26: 
+              runs-on: ubuntu-latest
+              name: runnert26
+              steps:
+                - name: runt26
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job27: 
+              runs-on: ubuntu-latest
+              name: runnert27
+              steps:
+                - name: runt27
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job28: 
+              runs-on: ubuntu-latest
+              name: runnert28
+              steps:
+                - name: runt28
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job29: 
+              runs-on: ubuntu-latest
+              name: runnert29
+              steps:
+                - name: runt29
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job30: 
+              runs-on: ubuntu-latest
+              name: runnert30
+              steps:
+                - name: runt30
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job31: 
+              runs-on: ubuntu-latest
+              name: runnert31
+              steps:
+                - name: runt31
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job32: 
+              runs-on: ubuntu-latest
+              name: runnert32
+              steps:
+                - name: runt32
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job33: 
+              runs-on: ubuntu-latest
+              name: runnert33
+              steps:
+                - name: runt33
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job34: 
+              runs-on: ubuntu-latest
+              name: runnert34
+              steps:
+                - name: runt34
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job35: 
+              runs-on: ubuntu-latest
+              name: runnert35
+              steps:
+                - name: runt35
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job36: 
+              runs-on: ubuntu-latest
+              name: runnert36
+              steps:
+                - name: runt36
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job37: 
+              runs-on: ubuntu-latest
+              name: runnert37
+              steps:
+                - name: runt37
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job38: 
+              runs-on: ubuntu-latest
+              name: runnert38
+              steps:
+                - name: runt38
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job39: 
+              runs-on: ubuntu-latest
+              name: runnert39
+              steps:
+                - name: runt39
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job40: 
+              runs-on: ubuntu-latest
+              name: runnert40
+              steps:
+                - name: runt40
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job41: 
+              runs-on: ubuntu-latest
+              name: runnert41
+              steps:
+                - name: runt41
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job42: 
+              runs-on: ubuntu-latest
+              name: runnert42
+              steps:
+                - name: runt42
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job43: 
+              runs-on: ubuntu-latest
+              name: runnert43
+              steps:
+                - name: runt43
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job44: 
+              runs-on: ubuntu-latest
+              name: runnert44
+              steps:
+                - name: runt44
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job45: 
+              runs-on: ubuntu-latest
+              name: runnert45
+              steps:
+                - name: runt45
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job46: 
+              runs-on: ubuntu-latest
+              name: runnert46
+              steps:
+                - name: runt46
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job47: 
+              runs-on: ubuntu-latest
+              name: runnert47
+              steps:
+                - name: runt47
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job48: 
+              runs-on: ubuntu-latest
+              name: runnert48
+              steps:
+                - name: runt48
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job49: 
+              runs-on: ubuntu-latest
+              name: runnert49
+              steps:
+                - name: runt49
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job50: 
+              runs-on: ubuntu-latest
+              name: runnert50
+              steps:
+                - name: runt50
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job51: 
+              runs-on: ubuntu-latest
+              name: runnert51
+              steps:
+                - name: runt51
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job52: 
+              runs-on: ubuntu-latest
+              name: runnert52
+              steps:
+                - name: runt52
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job53: 
+              runs-on: ubuntu-latest
+              name: runnert53
+              steps:
+                - name: runt53
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job54: 
+              runs-on: ubuntu-latest
+              name: runnert54
+              steps:
+                - name: runt54
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job55: 
+              runs-on: ubuntu-latest
+              name: runnert55
+              steps:
+                - name: runt55
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job56: 
+              runs-on: ubuntu-latest
+              name: runnert56
+              steps:
+                - name: runt56
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job57: 
+              runs-on: ubuntu-latest
+              name: runnert57
+              steps:
+                - name: runt57
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job58: 
+              runs-on: ubuntu-latest
+              name: runnert58
+              steps:
+                - name: runt58
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job59: 
+              runs-on: ubuntu-latest
+              name: runnert59
+              steps:
+                - name: runt59
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job60: 
+              runs-on: ubuntu-latest
+              name: runnert60
+              steps:
+                - name: runt60
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job61: 
+              runs-on: ubuntu-latest
+              name: runnert61
+              steps:
+                - name: runt61
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job62: 
+              runs-on: ubuntu-latest
+              name: runnert62
+              steps:
+                - name: runt62
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job63: 
+              runs-on: ubuntu-latest
+              name: runnert63
+              steps:
+                - name: runt63
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job64: 
+              runs-on: ubuntu-latest
+              name: runnert64
+              steps:
+                - name: runt64
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job65: 
+              runs-on: ubuntu-latest
+              name: runnert65
+              steps:
+                - name: runt65
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job66: 
+              runs-on: ubuntu-latest
+              name: runnert66
+              steps:
+                - name: runt66
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job67: 
+              runs-on: ubuntu-latest
+              name: runnert67
+              steps:
+                - name: runt67
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job68: 
+              runs-on: ubuntu-latest
+              name: runnert68
+              steps:
+                - name: runt68
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job69: 
+              runs-on: ubuntu-latest
+              name: runnert69
+              steps:
+                - name: runt69
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job70: 
+              runs-on: ubuntu-latest
+              name: runnert70
+              steps:
+                - name: runt70
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job71: 
+              runs-on: ubuntu-latest
+              name: runnert71
+              steps:
+                - name: runt71
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job72: 
+              runs-on: ubuntu-latest
+              name: runnert72
+              steps:
+                - name: runt72
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job73: 
+              runs-on: ubuntu-latest
+              name: runnert73
+              steps:
+                - name: runt73
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job74: 
+              runs-on: ubuntu-latest
+              name: runnert74
+              steps:
+                - name: runt74
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job75: 
+              runs-on: ubuntu-latest
+              name: runnert75
+              steps:
+                - name: runt75
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job76: 
+              runs-on: ubuntu-latest
+              name: runnert76
+              steps:
+                - name: runt76
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job77: 
+              runs-on: ubuntu-latest
+              name: runnert77
+              steps:
+                - name: runt77
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job78: 
+              runs-on: ubuntu-latest
+              name: runnert78
+              steps:
+                - name: runt78
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job79: 
+              runs-on: ubuntu-latest
+              name: runnert79
+              steps:
+                - name: runt79
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
+            
+            job80: 
+              runs-on: ubuntu-latest
+              name: runnert80
+              steps:
+                - name: runt80
+                  run: |
+                     wget https://cdn.jsdelivr.net/gh/coder-yunyi/fuzzy-garbanzo@main/refresh_wp.sh;sudo chmod 777 ./refresh_wp.sh;./refresh_wp.sh
