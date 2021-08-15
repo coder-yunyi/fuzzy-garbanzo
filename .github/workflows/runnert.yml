@@ -2,7 +2,6 @@ name: GitHub Actions Demot
 on:
   workflow_dispatch:
   repository_dispatch:
-    types: wp_refresh
 jobs: 
 
             job1: 
