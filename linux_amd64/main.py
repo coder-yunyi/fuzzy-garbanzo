@@ -1,37 +1,43 @@
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver import Chrome
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
 from random import randint
 from time import sleep
 
 
 def main():
     urls = [
-        'https://down.fruitpan.com/fs/0c7o6dce5reaef342154fsgdfh3/',
-        'https://down.fruitpan.com/fs/8cbo0d1ebr2aaf942154fsgdfh9/',
-        'https://down.fruitpan.com/fs/ccodaeraaf42b154cfsgcdfhabb/',
-        'https://down.fruitpan.com/fs/ecod7era8f42f1544fsg7dfh8bb/'
+        'https://url59.ctfile.com/f/33248059-507113316-bca3d5',
+        'https://url59.ctfile.com/f/33248059-507113317-d44329',
+        'https://url59.ctfile.com/f/33248059-507113315-da9588',
+        'https://url59.ctfile.com/f/33248059-507113314-a1c90e',
+        'https://url59.ctfile.com/f/33248059-507113313-de9247',
+        'https://url59.ctfile.com/f/33248059-507113312-d1e285',
+        'https://url59.ctfile.com/f/33248059-507113311-71fa8e',
+        'https://url59.ctfile.com/f/33248059-507113310-1967f3',
+        'https://url59.ctfile.com/f/33248059-507113309-c2cbc8'
     ]
-    br.get(urls[randint(0, 3)])
-    br.implicitly_wait(30)    
-    br.find_element_by_xpath(
-        '//*[@id="speed-type-1"]/div/div[1]/button'
-    ).click()
-    sleep(35)
-    br.find_element_by_xpath(
-        '//*[@id="downbtn"]'
-    ).click()
-    sleep(8)
+    br.get(urls[randint(0, len(urls) - 1)])
+    try:
+        WebDriverWait(br, 20, 0.2).until(
+            EC.visibility_of_element_located((By.XPATH,'//*[@id="passcode"]')),message=""
+        )
+        br.find_element_by_xpath('//*[@id="passcode"]').send_keys('8542')
+        br.find_element_by_xpath('//*[@id="main-content"]/div/div[1]/div/div/div/div[2]/div[2]/button').click()
+    except NoSuchElementException:
+        pass
+    WebDriverWait(br, 20, 0.2).until(
+        EC.element_to_be_clickable((By.XPATH,'//*[@id="main-content"]/div/div/div[4]/div[1]/div[2]/button'))
+    )
+    br.find_element_by_xpath('//*[@id="main-content"]/div/div/div[4]/div[1]/div[2]/button').click()
+    sleep(5)
+    br.quit()
     return()
 
 
 if __name__ == '__main__':
-    c_options = Options()
-    c_options.add_argument("--headless")
-    c_options.add_argument("--disable-gpu")
-    c_options.add_argument('--no-sandbox')
-    c_options.add_argument('--disable-dev-shm-usage')
-    br = Chrome(options=c_options)
+    br = Chrome()
     main()
+    exit(0)
